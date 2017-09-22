@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2015-05-02T14:02:07.9812280+03:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <EncryptedPassword />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>01/21/2015 10:55:07</publishTime>
+    </File>
+    <File Include="Account/ChangePassword.aspx">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Account/ChangePasswordSuccess.aspx">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="aspxAllowExcepEmplys.aspx">
+      <publishTime>12/28/2014 11:48:37</publishTime>
+    </File>
+    <File Include="aspxAuthorisePayroll.aspx">
+      <publishTime>12/28/2014 11:36:22</publishTime>
+    </File>
+    <File Include="aspxBanks.aspx">
+      <publishTime>03/16/2015 20:51:27</publishTime>
+    </File>
+    <File Include="aspxEmployeeDetails.aspx">
+      <publishTime>03/16/2015 20:53:27</publishTime>
+    </File>
+    <File Include="aspxEmpPayElements.aspx">
+      <publishTime>03/19/2015 16:07:43</publishTime>
+    </File>
+    <File Include="aspxExcepEmplys.aspx">
+      <publishTime>12/28/2014 11:48:10</publishTime>
+    </File>
+    <File Include="aspxImportFromExcel.aspx">
+      <publishTime>12/28/2014 16:18:12</publishTime>
+    </File>
+    <File Include="aspxJobTitles.aspx">
+      <publishTime>03/16/2015 20:34:32</publishTime>
+    </File>
+    <File Include="aspxLoanAmin.aspx">
+      <publishTime>03/16/2015 20:59:57</publishTime>
+    </File>
+    <File Include="aspxLoans.aspx">
+      <publishTime>03/16/2015 21:01:37</publishTime>
+    </File>
+    <File Include="aspxLogin.aspx">
+      <publishTime>01/16/2015 23:27:43</publishTime>
+    </File>
+    <File Include="aspxOrganization.aspx">
+      <publishTime>03/12/2015 01:40:53</publishTime>
+    </File>
+    <File Include="aspxPayElements.aspx">
+      <publishTime>03/16/2015 21:02:13</publishTime>
+    </File>
+    <File Include="aspxPayrollEnquiry.aspx">
+      <publishTime>12/28/2014 11:39:55</publishTime>
+    </File>
+    <File Include="aspxPayrolls.aspx">
+      <publishTime>03/12/2015 01:26:50</publishTime>
+    </File>
+    <File Include="aspxProcessPayroll.aspx">
+      <publishTime>04/05/2015 10:07:48</publishTime>
+    </File>
+    <File Include="aspxSystemPrivilages.aspx">
+      <publishTime>03/12/2015 01:26:50</publishTime>
+    </File>
+    <File Include="aspxSystemRoles.aspx">
+      <publishTime>03/16/2015 21:04:27</publishTime>
+    </File>
+    <File Include="aspxTaxeRates.aspx">
+      <publishTime>03/16/2015 21:05:48</publishTime>
+    </File>
+    <File Include="aspxTaxes.aspx">
+      <publishTime>03/12/2015 01:26:50</publishTime>
+    </File>
+    <File Include="aspxUserPasswordChange.aspx">
+      <publishTime>03/12/2015 01:26:50</publishTime>
+    </File>
+    <File Include="aspxUsers.aspx">
+      <publishTime>03/16/2015 21:34:10</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>06/13/2013 02:24:56</publishTime>
+    </File>
+    <File Include="bin/SerenePayroll.dll">
+      <publishTime>04/05/2015 10:05:36</publishTime>
+    </File>
+    <File Include="bin/SerenePayroll.pdb">
+      <publishTime>04/05/2015 10:05:36</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>12/26/2014 10:03:35</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Images/calender.png">
+      <publishTime>01/15/2011 17:47:42</publishTime>
+    </File>
+    <File Include="Images/confirmation.png">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Images/downarrow.png">
+      <publishTime>02/03/2015 13:16:35</publishTime>
+    </File>
+    <File Include="Images/error.png">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Images/information.png">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Images/logo.jpg">
+      <publishTime>01/24/2015 12:32:45</publishTime>
+    </File>
+    <File Include="Images/logo2.jpg">
+      <publishTime>01/24/2015 12:33:04</publishTime>
+    </File>
+    <File Include="Images/question.png">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Images/uparrow.png">
+      <publishTime>02/03/2015 13:26:44</publishTime>
+    </File>
+    <File Include="Images/warning.png">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Images/web.gif">
+      <publishTime>11/22/2014 23:23:14</publishTime>
+    </File>
+    <File Include="Scripts/calendar-en.min.js">
+      <publishTime>08/30/2010 22:03:00</publishTime>
+    </File>
+    <File Include="Scripts/CustomeFunctions.js">
+      <publishTime>03/12/2015 01:26:50</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.dynDateTime.min.js">
+      <publishTime>08/30/2010 22:02:14</publishTime>
+    </File>
+    <File Include="Scripts/zebra_dialog.js">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Scripts/zebra_dialog.src.js">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>03/12/2015 01:27:29</publishTime>
+    </File>
+    <File Include="SiteLogin.Master">
+      <publishTime>12/24/2014 12:29:32</publishTime>
+    </File>
+    <File Include="Styles/calendar-blue.css">
+      <publishTime>08/30/2010 22:04:22</publishTime>
+    </File>
+    <File Include="Styles/Site.css">
+      <publishTime>02/02/2015 19:41:12</publishTime>
+    </File>
+    <File Include="Styles/SiteLogin.css">
+      <publishTime>12/24/2014 15:41:36</publishTime>
+    </File>
+    <File Include="Styles/zebra_dialog.css">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/13/2015 10:19:16</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

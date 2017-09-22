@@ -1,0 +1,635 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 100%;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 2px 2px 2px 2px;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#3a4f63;
+    width:100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.modalBackground
+{
+      background-color: Yellow;
+}
+ 
+.modalPopup
+{
+      background-color:#ffffdd;
+      border-width:3px;
+      border-style:solid;
+      border-color:Gray;
+      padding:5px;
+      width: 350px;
+      height:300px;
+}
+
+.page_dimmer 
+{ 
+position:fixed; 
+height:100%; 
+width:100%; 
+top:0px; 
+left:0px; 
+background-color:#000000; 
+filter:alpha(opacity=30); 
+-moz-opacity:.30; 
+opacity:.30; 
+z-index:20; 
+} 
+
+
+.msg_box_container 
+{ 
+position:fixed; 
+background-color:#FFFFEE; 
+border:1px solid #999999; 
+z-index:50; 
+left:20%; 
+right:20%; 
+top:20%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+} 
+
+.report_container2 
+{ 
+position:fixed; 
+background-color:#FFFFEE; 
+border:1px solid #999999; 
+z-index:50; 
+left:5%; 
+right:5%; 
+top:5%;
+bottom:5%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+} 
+.report_container 
+{ 
+position:fixed; 
+background-color:#FFFFEE; 
+border:1px solid #999999; 
+z-index:0; 
+left:0%; 
+right:0%; 
+top:0%;
+bottom:0%;
+} 
+
+.errorTableRound 
+{ 
+    width : 100%; 
+    height : 100%;
+    border-width : 10px;
+    border-color : Inherit;
+    bottom:20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+} 
+
+.trFloating 
+{
+    width:inherit; 
+    background-color:inherit; 
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;"    
+}
+
+.tdFloatingLeft 
+{
+    font-weight:bolder; 
+    color:Black;
+    background-color:#dddddd; 
+            border-top-left-radius: 10px;
+
+}
+
+.tdFloatingRight 
+{
+    font-weight:bolder; 
+    color:Black;
+    background-color:#dddddd; 
+            border-top-right-radius: 10px;
+
+}
+
+.tdMessage
+{
+     padding-top : 10px; 
+     padding-left : 10px; 
+     padding-right : 10px; 
+     padding-bottom : 10px; 
+}
+
+.tr 
+{ 
+            background-color:#dddddd;
+}
+
+.hideGridColumn
+{
+    display:none;
+}
+
+.currencyGridColumn
+{
+     text-align:right;
+}
+
+.currency
+{
+     text-align:right;
+     background-color:White;
+}
+
+
+/**********
+Modal popup style
+*/
+/*
+// Variables
+// ----------------------*/
+
+$gray: #333;
+$gray-light: #aaa;
+$gray-lighter: #eee;
+$space: 40px;
+$blue: #428bca;
+$blue-dark: darken($blue, 5%);
+
+/* Mixin for transition/transform*/
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+      -ms-transform: translate($x, $y); // IE9+
+          transform: translate($x, $y);
+}
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+          transition: $transition;
+}
+@mixin transition-transform($transition) {
+  -webkit-transition: -webkit-transform unquote($transition);
+     -moz-transition: -moz-transform unquote($transition);
+       -o-transition: -o-transform unquote($transition);
+          transition: transform unquote($transition);
+}
+
+/*
+// Body
+*/ ----------------------
+
+body{
+  color: $gray;
+  font-family: 'Helvetica', arial;
+}
+
+.wrap{
+  padding: $space;
+  text-align: center;
+}
+
+hr {
+  clear: both;
+  margin-top: $space;
+  margin-bottom: $space;
+  border: 0;
+  border-top: 1px solid $gray-light;
+}
+
+h1{
+  font-size: 30px;
+  margin-bottom: $space;
+}
+
+p{
+  margin-bottom: $space/2;
+}
+
+/*
+// Btn 
+*/ ----------------------
+
+.btn{
+  background: $blue;
+  border: $blue-dark solid 1px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  transition: color .1s ease;
+  
+  &:hover{
+    background: $blue-dark;
+  }
+  
+  &.btn-big{
+    font-size: 18px;
+    padding: 15px 20px;
+    min-width: 100px;
+  }
+  
+}
+
+.btn-close{
+  color: $gray-light;
+  font-size: 30px;
+  text-decoration: none;
+  position: absolute; right: 5px; top: 0;
+  
+  &:hover{
+     color: darken($gray-light, 10%);
+  }
+  
+}
+
+/*
+// Modal
+*/ ----------------------
+
+.modal{
+  
+  /* This is modal bg*/
+  &:before{
+    content: ""; 
+    /*display: none;*/
+    background: rgba(0,0,0,0); 
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0; 
+    z-index: -1;
+    
+  }
+  
+  &:target{
+    
+    /* Active animate in modal*/
+    &:before{
+      @include transition-transform("0.9s ease-out");
+    z-index:10;  
+    background: rgba(0,0,0,.6); 
+      /*display: block;*/
+    } 
+  }
+  
+}
+.modal:target + .modal-dialog{
+      @include translate(0, 0);
+      top: 20%;  
+    }
+
+/* Modal Dialog*/
+
+.modal-dialog{
+  background: #fefefe;
+  border: $gray solid 1px;
+  border-radius: 5px;
+  margin-left: -200px;
+  position: fixed; 
+  left: 50%; 
+  top: -100%;  
+  z-index: 11; 
+  width: 360px;
+  @include translate(0, -500%);
+  @include transition-transform("0.3s ease-out");
+}
+
+.modal-body{
+  padding: $space/2;
+}
+
+.modal-header,
+.modal-footer{
+  padding: $space/4 $space/2;
+}
+
+.modal-header{
+  border-bottom: $gray-lighter solid 1px;
+  
+  h2{
+    font-size: 20px;
+  }
+  
+}
+
+.modal-footer{
+  border-top: $gray-lighter solid 1px;
+  text-align: right;
+}
+ 
+
+/**********
+End Modal Popup Style
+*/
+
+.img{
+     width: 100px;     
+     padding: 0px;
+     z-index: 3;
+ }
+ .img:hover {
+     border: 5px solid #f4f4f4;
+    transform: scale(3.5);
+      -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+     z-index: 3;
+ }
+
+ .hidden {display:none;}

@@ -1,0 +1,8 @@
+c:\MSprojects\visual studio 2010\Projects\SerenePayroll\SerenePayroll\bin\SerenePayroll.dll
+c:\MSprojects\visual studio 2010\Projects\SerenePayroll\SerenePayroll\bin\SerenePayroll.pdb
+c:\MSprojects\visual studio 2010\Projects\SerenePayroll\SerenePayroll\obj\Debug\ResolveAssemblyReference.cache
+c:\MSprojects\visual studio 2010\Projects\SerenePayroll\SerenePayroll\obj\Debug\SerenePayroll.dll
+c:\MSprojects\visual studio 2010\Projects\SerenePayroll\SerenePayroll\obj\Debug\SerenePayroll.pdb
+c:\MSprojects\visual studio 2010\Projects\SerenePayroll\SerenePayroll\bin\MySql.Data.dll
+c:\MSprojects\visual studio 2010\Projects\SerenePayroll\SerenePayroll\obj\Debug\RdlCompile.cache
+c:\MSprojects\visual studio 2010\Projects\SerenePayroll\SerenePayroll\obj\Debug\RdlCompile.compiled

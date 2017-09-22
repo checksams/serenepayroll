@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7CC37CCE-20CA-4DA5-B8CC-8981810FE323}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SerenePayroll</RootNamespace>
+    <AssemblyName>SerenePayroll</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>packages\EPPlus.4.1.0\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.Common\10.0.0.0__b03f5f7f11d50a3a\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.ReportViewer.2012.Runtime.11.0.3452.0\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.WebForms\10.0.0.0__b03f5f7f11d50a3a\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="aspxAllowExcepEmplys.aspx" />
+    <Content Include="aspxAuthorisePayroll.aspx" />
+    <Content Include="aspxBanks.aspx" />
+    <Content Include="aspxEmployeeDetails.aspx" />
+    <Content Include="aspxEmpPayElements.aspx" />
+    <Content Include="aspxExcepEmplys.aspx" />
+    <Content Include="aspxImportFromExcel.aspx" />
+    <Content Include="aspxJobTitles.aspx" />
+    <Content Include="aspxLoanAmin.aspx" />
+    <Content Include="aspxLoans.aspx" />
+    <Content Include="aspxLogin.aspx" />
+    <Content Include="aspxOrganization.aspx" />
+    <Content Include="aspxPayElements.aspx" />
+    <Content Include="aspxPayrolls.aspx" />
+    <Content Include="aspxProcessPayroll.aspx" />
+    <Content Include="aspxSystemPrivilages.aspx" />
+    <Content Include="aspxSystemRoles.aspx" />
+    <Content Include="aspxTaxeRates.aspx" />
+    <Content Include="aspxTaxes.aspx" />
+    <Content Include="aspxUserPasswordChange.aspx" />
+    <Content Include="aspxUsers.aspx" />
+    <Content Include="aspxPayrollEnquiry.aspx" />
+    <Content Include="Images\calender.png" />
+    <Content Include="Images\confirmation.png" />
+    <Content Include="Images\downarrow.png" />
+    <Content Include="Images\error.png" />
+    <Content Include="Images\information.png" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\logo2.jpg" />
+    <Content Include="Images\question.png" />
+    <Content Include="Images\uparrow.png" />
+    <Content Include="Images\warning.png" />
+    <Content Include="Images\web.gif" />
+    <Content Include="Scripts\calendar-en.min.js" />
+    <Content Include="Scripts\CustomeFunctions.js" />
+    <Content Include="Scripts\jquery.dynDateTime.min.js" />
+    <Content Include="Scripts\zebra_dialog.js" />
+    <Content Include="Scripts\zebra_dialog.src.js" />
+    <Content Include="Styles\calendar-blue.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\SiteLogin.css" />
+    <Content Include="Styles\zebra_dialog.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxAllowExcepEmplys.aspx.cs">
+      <DependentUpon>aspxAllowExcepEmplys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxAllowExcepEmplys.aspx.designer.cs">
+      <DependentUpon>aspxAllowExcepEmplys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxAuthorisePayroll.aspx.cs">
+      <DependentUpon>aspxAuthorisePayroll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxAuthorisePayroll.aspx.designer.cs">
+      <DependentUpon>aspxAuthorisePayroll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxBanks.aspx.cs">
+      <DependentUpon>aspxBanks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxBanks.aspx.designer.cs">
+      <DependentUpon>aspxBanks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxEmployeeDetails.aspx.cs">
+      <DependentUpon>aspxEmployeeDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxEmployeeDetails.aspx.designer.cs">
+      <DependentUpon>aspxEmployeeDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxEmpPayElements.aspx.cs">
+      <DependentUpon>aspxEmpPayElements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxEmpPayElements.aspx.designer.cs">
+      <DependentUpon>aspxEmpPayElements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxExcepEmplys.aspx.cs">
+      <DependentUpon>aspxExcepEmplys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxExcepEmplys.aspx.designer.cs">
+      <DependentUpon>aspxExcepEmplys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxImportFromExcel.aspx.cs">
+      <DependentUpon>aspxImportFromExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxImportFromExcel.aspx.designer.cs">
+      <DependentUpon>aspxImportFromExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxJobTitles.aspx.cs">
+      <DependentUpon>aspxJobTitles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxJobTitles.aspx.designer.cs">
+      <DependentUpon>aspxJobTitles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxLoanAmin.aspx.cs">
+      <DependentUpon>aspxLoanAmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxLoanAmin.aspx.designer.cs">
+      <DependentUpon>aspxLoanAmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxLoans.aspx.cs">
+      <DependentUpon>aspxLoans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxLoans.aspx.designer.cs">
+      <DependentUpon>aspxLoans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxLogin.aspx.cs">
+      <DependentUpon>aspxLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxLogin.aspx.designer.cs">
+      <DependentUpon>aspxLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxOrganization.aspx.cs">
+      <DependentUpon>aspxOrganization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxOrganization.aspx.designer.cs">
+      <DependentUpon>aspxOrganization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxPayElements.aspx.cs">
+      <DependentUpon>aspxPayElements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxPayElements.aspx.designer.cs">
+      <DependentUpon>aspxPayElements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxPayrolls.aspx.cs">
+      <DependentUpon>aspxPayrolls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxPayrolls.aspx.designer.cs">
+      <DependentUpon>aspxPayrolls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxProcessPayroll.aspx.cs">
+      <DependentUpon>aspxProcessPayroll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxProcessPayroll.aspx.designer.cs">
+      <DependentUpon>aspxProcessPayroll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxSystemPrivilages.aspx.cs">
+      <DependentUpon>aspxSystemPrivilages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxSystemPrivilages.aspx.designer.cs">
+      <DependentUpon>aspxSystemPrivilages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxSystemRoles.aspx.cs">
+      <DependentUpon>aspxSystemRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxSystemRoles.aspx.designer.cs">
+      <DependentUpon>aspxSystemRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxTaxeRates.aspx.cs">
+      <DependentUpon>aspxTaxeRates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxTaxeRates.aspx.designer.cs">
+      <DependentUpon>aspxTaxeRates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxTaxes.aspx.cs">
+      <DependentUpon>aspxTaxes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxTaxes.aspx.designer.cs">
+      <DependentUpon>aspxTaxes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxUserPasswordChange.aspx.cs">
+      <DependentUpon>aspxUserPasswordChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxUserPasswordChange.aspx.designer.cs">
+      <DependentUpon>aspxUserPasswordChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxUsers.aspx.cs">
+      <DependentUpon>aspxUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxUsers.aspx.designer.cs">
+      <DependentUpon>aspxUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxPayrollEnquiry.aspx.cs">
+      <DependentUpon>aspxPayrollEnquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxPayrollEnquiry.aspx.designer.cs">
+      <DependentUpon>aspxPayrollEnquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csPublic.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MessageItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SereneHR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SereneHR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="serenehrdbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>serenehrdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="serenehrdbDataSet_rptPaySlip_001.cs">
+      <DependentUpon>serenehrdbDataSet_rptPaySlip_001.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="serenehrdbDataSet_rptPaySlip_001.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>serenehrdbDataSet_rptPaySlip_001.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="serenehrdb_rptEmpList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>serenehrdb_rptEmpList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteLogin.Master.cs">
+      <DependentUpon>SiteLogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteLogin.Master.designer.cs">
+      <DependentUpon>SiteLogin.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="Import_templates\Employee_temp.csv" />
+    <Content Include="Import_templates\Employee_temp.xls" />
+    <Content Include="Import_templates\Employee_temp.xlsx" />
+    <Content Include="Import_templates\testimport.csv" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="Properties\PublishProfiles\Profile2.pubxml" />
+    <Content Include="Reports\rptBanksListing - Copy.rdlc" />
+    <Content Include="Reports\rptBanksListing.rdlc" />
+    <Content Include="Reports\rptBanksrdlc1.rdlc" />
+    <Content Include="Reports\rptEmpList.rdl" />
+    <Content Include="Reports\rptEmpList.rdlc" />
+    <Content Include="Reports\rptPaySlip_001 - Backup %282%29.rdl" />
+    <Content Include="Reports\rptPaySlip_001 - Backup.rdl" />
+    <Content Include="Reports\rptPaySlip_001.rdl" />
+    <Content Include="Reports\rptPaySlip_001.rdlc" />
+    <Content Include="Reports\rptPaySlip_001_copy1.rdlc" />
+    <Content Include="Reports\rptPaySlip_002.rdl" />
+    <Content Include="Reports\rptPaySlip_002.rdlc" />
+    <Content Include="Reports\rptPaySlip_002_copy1.rdlc" />
+    <Content Include="Reports\Untitled.rdl" />
+    <None Include="SereneHR.xsc">
+      <DependentUpon>SereneHR.xsd</DependentUpon>
+    </None>
+    <None Include="SereneHR.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SereneHR.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SereneHR.xss">
+      <DependentUpon>SereneHR.xsd</DependentUpon>
+    </None>
+    <Content Include="SiteLogin.Master" />
+    <None Include="serenehrdbDataSet.xsc">
+      <DependentUpon>serenehrdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="serenehrdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>serenehrdbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="serenehrdbDataSet.xss">
+      <DependentUpon>serenehrdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="serenehrdbDataSet_rptPaySlip_001.xsc">
+      <DependentUpon>serenehrdbDataSet_rptPaySlip_001.xsd</DependentUpon>
+    </None>
+    <None Include="serenehrdbDataSet_rptPaySlip_001.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>serenehrdbDataSet_rptPaySlip_001.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="serenehrdbDataSet_rptPaySlip_001.xss">
+      <DependentUpon>serenehrdbDataSet_rptPaySlip_001.xsd</DependentUpon>
+    </None>
+    <None Include="serenehrdb_rptEmpList.xsc">
+      <DependentUpon>serenehrdb_rptEmpList.xsd</DependentUpon>
+    </None>
+    <None Include="serenehrdb_rptEmpList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>serenehrdb_rptEmpList.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="serenehrdb_rptEmpList.xss">
+      <DependentUpon>serenehrdb_rptEmpList.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report1.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54361</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

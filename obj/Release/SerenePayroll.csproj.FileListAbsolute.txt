@@ -1,0 +1,8 @@
+F:\Developments\SerenePayroll\bin\SerenePayroll.dll
+F:\Developments\SerenePayroll\bin\SerenePayroll.pdb
+F:\Developments\SerenePayroll\obj\Release\SerenePayroll.csprojResolveAssemblyReference.cache
+F:\Developments\SerenePayroll\obj\Release\SerenePayroll.dll
+F:\Developments\SerenePayroll\obj\Release\SerenePayroll.pdb
+F:\Developments\SerenePayroll\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+F:\Developments\SerenePayroll\bin\EPPlus.dll
+F:\Developments\SerenePayroll\bin\EPPlus.xml

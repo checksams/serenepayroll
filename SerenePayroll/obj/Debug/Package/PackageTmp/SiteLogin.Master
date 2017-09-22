@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteLogin.master.cs" Inherits="SerenePayroll.SiteLogin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="page">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        <div class="header">
+                    <h1 align="center">Serene Payroll</h1>
+                    <h1 align="center">Company Name </h1>
+        
+        </div>
+        </asp:ContentPlaceHolder>
+        <div style="background-color:#dddddd;">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,151 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SerenePayroll.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript">
+        function MySiteFunction(title, msg) {
+            var orignalstring = document.getElementById("sitemsgbox").innerHTML;
+            var newstring = orignalstring.replace("[TITLE]", title);
+            document.getElementById("sitemsgbox").innerHTML = newstring;
+
+            orignalstring = document.getElementById("sitemsgbox").innerHTML;
+            newstring = orignalstring.replace("[MESSAGE]", msg);
+            document.getElementById("sitemsgbox").innerHTML = newstring;
+
+            document.getElementById('sitedimmer').style.visibility = 'visible';
+            document.getElementById('sitedimmer').style.display = 'inline';
+            document.getElementById('sitemsgbox').style.visibility = 'visible';
+            document.getElementById('sitemsgbox').style.display = 'inline';
+        }
+    </script>
+
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page_dimmer" id="sitedimmer" style="display:none "> </div> 
+    <div class="msg_box_container" id="sitemsgbox" style="display:none "> 
+    <table class="errorTableRound" cellpadding="5"> 
+    <tr style="background-color:inherit;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;"> 
+    <td colspan="2" style="font-weight:bolder">[TITLE]</td> 
+    </tr> 
+    <tr> 
+    <td>[MESSAGE]</td> <td><asp:TextBox ID="txtProductKey" runat="server" Width="300px"></asp:TextBox></td> 
+    </tr> 
+    <tr> 
+    <td colspan="2" align="center">
+        <asp:Button ID="btnOk" runat="server" Text="OK" OnClick="btnOk_Click" />
+    </tr> 
+    </table> 
+    </div> 
+
+    <div>
+        <div class="header">
+        <table width="100%">
+        <tr>
+        <td>
+            <div class="vendor">
+                <h1 class="h1">
+                    Serene Payroll
+                </h1>
+            </div>
+         </td>
+         <td>
+            <div class="title">
+                <h1>
+                    Company Name
+                </h1>
+            </div>
+         </td>
+         <td>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/aspxLogin.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+         </td>
+         </tr>
+         </table>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    onmenuitemclick="NavigationMenu_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Organization">
+                             <asp:MenuItem NavigateUrl="~/aspxOrganization.aspx" Text="Organization Structure" Selectable="false"/>
+                             <asp:MenuItem NavigateUrl="~/aspxJobTitles.aspx" Text="Job Titles" Selectable="false"/>
+                             <asp:MenuItem NavigateUrl="~/aspxPayrolls.aspx" Text="Payrolls" Selectable="false"/>
+                             <asp:MenuItem NavigateUrl="~/aspxEmployeeDetails.aspx" Text="Employee Details" Selectable="false"/>
+                             <asp:MenuItem NavigateUrl="~/aspxBanks.aspx" Text="Banks" Selectable="false"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Setup">
+                             <asp:MenuItem NavigateUrl="~/aspxTaxes.aspx" Text="Taxes and Charges" Selectable="false"/>
+                             <asp:MenuItem NavigateUrl="~/aspxTaxeRates.aspx" Text="Taxes and Charges Rates" Selectable="false"/>
+                             <asp:MenuItem NavigateUrl="~/aspxPayElements.aspx" Text="Pay Elements" Selectable="false"/>
+                             <asp:MenuItem NavigateUrl="~/aspxEmpPayElements.aspx" Text="Employee Pay Elements" Selectable="false"/>
+                             <asp:MenuItem NavigateUrl="~/aspxLoans.aspx" Text="Employee Loan Types" Selectable="false"/>
+                             <asp:MenuItem NavigateUrl="~/aspxLoanAmin.aspx" Text="Loan Administration" Selectable="false"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="" Text="System Administration">
+                            <asp:MenuItem NavigateUrl="~/aspxSystemPrivilages.aspx" Text="System Privilages" Selectable="false"/>
+                            <asp:MenuItem NavigateUrl="~/aspxSystemRoles.aspx" Text="System Roles" Selectable="false"/>
+                            <asp:MenuItem NavigateUrl="~/aspxUsers.aspx" Text="User Setup" Selectable="false"/>
+                            <asp:MenuItem NavigateUrl="~/aspxUserPasswordChange.aspx" Text="Change Password" />
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="" Text="Payroll Processing">
+                            <asp:MenuItem NavigateUrl="~/aspxProcessPayroll.aspx" Text="Process Payroll" Selectable="false"/>
+                            <asp:MenuItem NavigateUrl="~/aspxAuthorisePayroll.aspx" Text="Authorise Payroll" Selectable="false"/>
+                            <asp:MenuItem NavigateUrl="~/aspxPayrollEnquiry.aspx" Text="Payroll Enquiry" Selectable="false"/>
+                            <asp:MenuItem NavigateUrl="~/aspxExcepEmplys.aspx" Text="Exceptional Employees" Selectable="false"/>
+                            <asp:MenuItem NavigateUrl="~/aspxAllowExcepEmplys.aspx" Text="Allow Exceptional Employees" Selectable="false"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="" Text="Reports" >
+                            <asp:MenuItem NavigateUrl="~/aspxImportFromExcel.aspx" Text="Import From Excel"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
+                    </Items>
+                </asp:Menu>
+
+            </div>
+        </div>
+        <div style="background-color:Black;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:ContentPlaceHolder ID="workflow" runat="server">
+                <asp:Label ID="lblProcessArea" Width="10%" runat="server" BackColor="Black" 
+                    Font-Bold="False" ForeColor="White">                    
+                       Process Area :
+                </asp:Label>
+                <asp:Label ID="lblWorkFlow" runat="server" BackColor="Black" 
+                    Font-Bold="False" ForeColor="White"></asp:Label>
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

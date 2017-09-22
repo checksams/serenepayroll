@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2015-05-02T14:02:07.9812280+03:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>01/21/2015 10:55:07</publishTime>
+    </File>
+    <File Include="Account/ChangePassword.aspx">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Account/ChangePasswordSuccess.aspx">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="aspxAllowExcepEmplys.aspx">
+      <publishTime>12/28/2014 11:48:37</publishTime>
+    </File>
+    <File Include="aspxAuthorisePayroll.aspx">
+      <publishTime>12/28/2014 11:36:22</publishTime>
+    </File>
+    <File Include="aspxBanks.aspx">
+      <publishTime>02/08/2017 22:00:42</publishTime>
+    </File>
+    <File Include="aspxEmployeeDetails.aspx">
+      <publishTime>02/19/2017 05:35:18</publishTime>
+    </File>
+    <File Include="aspxEmpPayElements.aspx">
+      <publishTime>02/25/2017 16:51:33</publishTime>
+    </File>
+    <File Include="aspxExcepEmplys.aspx">
+      <publishTime>12/28/2014 11:48:10</publishTime>
+    </File>
+    <File Include="aspxImportFromExcel.aspx">
+      <publishTime>12/28/2014 16:18:12</publishTime>
+    </File>
+    <File Include="aspxJobTitles.aspx">
+      <publishTime>03/16/2015 20:34:32</publishTime>
+    </File>
+    <File Include="aspxLoanAmin.aspx">
+      <publishTime>03/16/2015 20:59:57</publishTime>
+    </File>
+    <File Include="aspxLoans.aspx">
+      <publishTime>03/16/2015 21:01:37</publishTime>
+    </File>
+    <File Include="aspxLogin.aspx">
+      <publishTime>03/04/2017 19:44:50</publishTime>
+    </File>
+    <File Include="aspxOrganization.aspx">
+      <publishTime>03/12/2015 01:40:53</publishTime>
+    </File>
+    <File Include="aspxPayElements.aspx">
+      <publishTime>03/03/2017 08:49:20</publishTime>
+    </File>
+    <File Include="aspxPayrollEnquiry.aspx">
+      <publishTime>09/17/2017 23:20:07</publishTime>
+    </File>
+    <File Include="aspxPayrolls.aspx">
+      <publishTime>09/17/2017 23:19:54</publishTime>
+    </File>
+    <File Include="aspxProcessPayroll.aspx">
+      <publishTime>02/19/2017 00:13:24</publishTime>
+    </File>
+    <File Include="aspxSystemPrivilages.aspx">
+      <publishTime>03/12/2015 01:26:50</publishTime>
+    </File>
+    <File Include="aspxSystemRoles.aspx">
+      <publishTime>03/16/2015 21:04:27</publishTime>
+    </File>
+    <File Include="aspxTaxeRates.aspx">
+      <publishTime>02/17/2017 01:00:58</publishTime>
+    </File>
+    <File Include="aspxTaxes.aspx">
+      <publishTime>03/12/2015 01:26:50</publishTime>
+    </File>
+    <File Include="aspxUserPasswordChange.aspx">
+      <publishTime>02/19/2017 02:05:01</publishTime>
+    </File>
+    <File Include="aspxUsers.aspx">
+      <publishTime>03/16/2015 21:34:10</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>02/19/2017 10:34:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>02/05/2017 13:40:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.DLL">
+      <publishTime>02/05/2017 13:40:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.DLL">
+      <publishTime>02/05/2017 13:40:35</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>06/13/2013 02:24:56</publishTime>
+    </File>
+    <File Include="bin/SerenePayroll.dll">
+      <publishTime>09/18/2017 00:55:23</publishTime>
+    </File>
+    <File Include="bin/SerenePayroll.pdb">
+      <publishTime>05/02/2015 13:58:15</publishTime>
+    </File>
+    <File Include="DataSet1.xsc">
+      <publishTime>07/25/2016 18:12:20</publishTime>
+    </File>
+    <File Include="DataSet1.xss">
+      <publishTime>07/25/2016 18:12:21</publishTime>
+    </File>
+    <File Include="DataSet2.xsc">
+      <publishTime>02/04/2017 12:12:51</publishTime>
+    </File>
+    <File Include="DataSet2.xss">
+      <publishTime>02/04/2017 12:12:49</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>12/26/2014 10:03:35</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Images/calender.png">
+      <publishTime>01/15/2011 17:47:42</publishTime>
+    </File>
+    <File Include="Images/confirmation.png">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Images/downarrow.png">
+      <publishTime>02/03/2015 13:16:35</publishTime>
+    </File>
+    <File Include="Images/error.png">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Images/information.png">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Images/logo.jpg">
+      <publishTime>01/24/2015 12:32:45</publishTime>
+    </File>
+    <File Include="Images/logo2.jpg">
+      <publishTime>01/24/2015 12:33:04</publishTime>
+    </File>
+    <File Include="Images/question.png">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Images/uparrow.png">
+      <publishTime>02/03/2015 13:26:44</publishTime>
+    </File>
+    <File Include="Images/warning.png">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Images/web.gif">
+      <publishTime>11/22/2014 23:23:14</publishTime>
+    </File>
+    <File Include="Import_templates/Employee_temp.csv">
+      <publishTime>02/19/2017 11:20:19</publishTime>
+    </File>
+    <File Include="Import_templates/Employee_temp.xls">
+      <publishTime>02/19/2017 11:20:19</publishTime>
+    </File>
+    <File Include="Import_templates/Employee_temp.xlsx">
+      <publishTime>02/19/2017 11:20:19</publishTime>
+    </File>
+    <File Include="Import_templates/testimport.csv">
+      <publishTime>02/19/2017 11:20:19</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/19/2017 10:34:11</publishTime>
+    </File>
+    <File Include="Reports/rptBanksListing - Copy.rdlc">
+      <publishTime>02/07/2017 09:36:07</publishTime>
+    </File>
+    <File Include="Reports/rptBanksListing.rdlc">
+      <publishTime>02/08/2017 22:22:24</publishTime>
+    </File>
+    <File Include="Reports/rptBanksrdlc1.rdlc">
+      <publishTime>02/07/2017 08:31:58</publishTime>
+    </File>
+    <File Include="Reports/rptEmpList.rdl">
+      <publishTime>02/08/2017 21:53:29</publishTime>
+    </File>
+    <File Include="Reports/rptEmpList.rdlc">
+      <publishTime>02/08/2017 21:43:34</publishTime>
+    </File>
+    <File Include="Reports/rptPaySlip_001 - Backup %282%29.rdl">
+      <publishTime>02/18/2017 10:17:50</publishTime>
+    </File>
+    <File Include="Reports/rptPaySlip_001 - Backup.rdl">
+      <publishTime>02/18/2017 09:48:48</publishTime>
+    </File>
+    <File Include="Reports/rptPaySlip_001.rdl">
+      <publishTime>02/18/2017 10:44:18</publishTime>
+    </File>
+    <File Include="Reports/rptPaySlip_001.rdlc">
+      <publishTime>02/18/2017 10:44:18</publishTime>
+    </File>
+    <File Include="Reports/rptPaySlip_001_copy1.rdlc">
+      <publishTime>02/18/2017 10:17:50</publishTime>
+    </File>
+    <File Include="Reports/rptPaySlip_002.rdl">
+      <publishTime>02/18/2017 10:38:30</publishTime>
+    </File>
+    <File Include="Reports/rptPaySlip_002.rdlc">
+      <publishTime>02/18/2017 10:37:12</publishTime>
+    </File>
+    <File Include="Reports/rptPaySlip_002_copy1.rdlc">
+      <publishTime>02/18/2017 10:25:29</publishTime>
+    </File>
+    <File Include="Reports/Untitled.rdl">
+      <publishTime>02/04/2017 20:33:28</publishTime>
+    </File>
+    <File Include="Scripts/calendar-en.min.js">
+      <publishTime>08/30/2010 22:03:00</publishTime>
+    </File>
+    <File Include="Scripts/CustomeFunctions.js">
+      <publishTime>03/12/2015 01:26:50</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>12/24/2014 07:53:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.dynDateTime.min.js">
+      <publishTime>08/30/2010 22:02:14</publishTime>
+    </File>
+    <File Include="Scripts/zebra_dialog.js">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Scripts/zebra_dialog.src.js">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>02/25/2017 14:12:33</publishTime>
+    </File>
+    <File Include="SiteLogin.Master">
+      <publishTime>02/19/2017 11:29:54</publishTime>
+    </File>
+    <File Include="Styles/calendar-blue.css">
+      <publishTime>08/30/2010 22:04:22</publishTime>
+    </File>
+    <File Include="Styles/Site.css">
+      <publishTime>02/19/2017 00:40:53</publishTime>
+    </File>
+    <File Include="Styles/SiteLogin.css">
+      <publishTime>02/19/2017 00:37:51</publishTime>
+    </File>
+    <File Include="Styles/zebra_dialog.css">
+      <publishTime>04/07/2012 23:44:32</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/18/2017 00:55:24</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
